@@ -14,7 +14,7 @@ export default function Post() {
   useEffect(() => {
     console.log('Current slug:', slug); // 👈 添加日志
     const fetchPost = async () => {
-      const fetchedPost = await getPostBySlug(slug);
+      const fetchedPost = await getPostBySlug(slug as string);
       console.log(' fetchedPost:', fetchedPost);
       setPost(fetchedPost);
       setLoading(false);
@@ -28,12 +28,13 @@ export default function Post() {
   if (!post.content) return <p className="text-center mt-5">暂无内容</p>;
 
   return (
-    <div className="container mt-4">
+    <div className="container mt-4 bg-light text-dark min-h-screen p-6 rounded shadow">
       <h1 className="mb-3">{post.title}</h1>
-      <p className="text-muted">{post.date}</p>
+      <p className="text-muted mb-2">{post.date}</p>
       <article className="prose">
         <ReactMarkdown rehypePlugins={[remarkGfm, rehypeRaw]}>{post.content}</ReactMarkdown>
       </article>
+      <button className="btn-primary px-4 py-2 rounded text-white mt-6">主色按钮</button>
     </div>
   );
 }
