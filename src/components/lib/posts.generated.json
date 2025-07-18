@@ -8,13 +8,13 @@
   {
     "slug": "vite-react",
     "title": "Vite + React 快速搭建",
-    "date": "2025-07-19T00:00:00.000Z",
+    "date": "2025-07-19",
     "description": "5 分钟搭好 Vite + React 静态博客。"
   },
   {
     "slug": "hello-world",
     "title": "Hello World",
-    "date": "2025-07-18T00:00:00.000Z",
+    "date": "2025-07-18",
     "description": "我的第一篇博客，记录从零开始的旅程。"
   }
 ]

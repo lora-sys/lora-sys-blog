@@ -5,13 +5,10 @@ import { getAllPosts } from '../components/lib/posts'
 import React from 'react'
 export default function Blog() {
   const [posts, setPosts] = useState<PostMeta[]>([])
-  useEffect(()=>{
- const fetchPost =async ()=>{
-  const posts = await getAllPosts();
-  setPosts(posts)
- }
- fetchPost();
-  },[]);
+  useEffect(() => {
+    const posts = getAllPosts();
+    setPosts(posts);
+  }, []);
   return (
     <div className="container mt-4">
       <h1 className="mb-4">最新博客</h1>
@@ -22,9 +19,7 @@ export default function Blog() {
               <div className="card-body">
                 <h5 className="card-title">{p.title}</h5>
                 <p className="card-text">{p.description}</p>
-                <Link to={`/post/${p.slug}`} className="btn btn-primary btn-sm">
-                  阅读全文
-                </Link>
+                <Link to={`/blog/${p.slug}`}>阅读全文</Link>
               </div>
               <div className="card-footer text-muted">{p.date}</div>
             </div>

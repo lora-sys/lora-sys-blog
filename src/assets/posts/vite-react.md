@@ -1,13 +1,15 @@
 ---
-title: Vite + React 快速搭建
-date: 2025-07-19
-description: 5 分钟搭好 Vite + React 静态博客。
+title: "Vite + React 快速搭建"
+date: "2025-07-19"
+description: "5 分钟搭好 Vite + React 静态博客。"
 ---
 
-# Vite + React 静态博客
+# Vite + React 快速搭建
 
-使用 Vite 和 React 可以快速构建一个静态博客，步骤如下：
+这是 Vite + React 的文章内容。
 
-1. 安装依赖  
-2. 配置路由  
-3. 引入 Bootstrap 5
+## 步骤
+
+1. 安装 Vite
+2. 创建 React 项目
+3. 添加路由和组件
