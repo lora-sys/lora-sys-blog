@@ -10,7 +10,7 @@ export default function Home() {
         <div className="relative flex h-[400px] w-full items-center justify-center overflow-hidden mt-8">
           <AvatarOrbit
             images={[
-              "/src/assets/image.png",
+              "/image.png",
             ]}
             size={120}
             radius={120}
