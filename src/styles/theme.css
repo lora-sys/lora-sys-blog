@@ -19,6 +19,17 @@
   }
 }
 
+[data-theme="light"] {
+  --bs-primary: #ff9f43;
+  --bs-light: #fff6e5;
+  --bs-dark: #3e2723;
+}
+[data-theme="dark"] {
+  --bs-primary: #ffb86c;
+  --bs-light: #23272e;
+  --bs-dark: #f8f8f2;
+}
+
 .btn-primary{ 
   background-color: var(--bs-primary);
   border-color: var(--bs-primary);
