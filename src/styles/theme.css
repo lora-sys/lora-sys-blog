@@ -11,6 +11,14 @@
    --bs-dark-rgb: 62, 39, 35;
 }
 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bs-primary: #ffb86c;
+    --bs-light: #23272e;
+    --bs-dark: #f8f8f2;
+  }
+}
+
 .btn-primary{ 
   background-color: var(--bs-primary);
   border-color: var(--bs-primary);

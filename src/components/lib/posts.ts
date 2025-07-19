@@ -2,7 +2,7 @@ import type { PostMeta,Post } from "./types";
 import postsIndex from "./posts.generated.json" assert { type: "json" }
 import matter from "gray-matter";
 
-export const getAllPosts = ():PostMeta[] =>postsIndex;
+export const getAllPosts = ():PostMeta[] => postsIndex;
 export const getPostBySlug = async (slug: string): Promise<Post | undefined> => {
   const all = import.meta.glob<string>('../../assets/posts/*.md', { query: '?raw', import: 'default' });
   const key = Object.keys(all).find(k => k.endsWith(`/${slug}.md`));
@@ -19,6 +19,8 @@ export const getPostBySlug = async (slug: string): Promise<Post | undefined> => 
     title: data.title || slug,
     date: data.date,
     description: data.description || '',
+    tags: data.tags || [],
+    author: data.author || '',
     content
   };
 };

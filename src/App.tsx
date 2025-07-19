@@ -8,6 +8,7 @@ import BlogEditor from './pages/BlogEditor';
 import './App.css';
 import React from 'react';
 import Post from './pages/Post';
+import NotFound from './pages/NotFound';
 export default function App() {
   return (
     <BrowserRouter>
@@ -19,6 +20,7 @@ export default function App() {
         <Route path='/blog/edit' element={<div className="mt-16"><BlogEditor /></div>}></Route>
         <Route path='/blog/:slug' element={<div className="mt-16"><Post /></div>}></Route>
         <Route path='/contact' element={<div className="mt-16"><Contact /></div>} />
+        <Route path='*' element={<div className="mt-16"><NotFound /></div>} />
       </Routes>
     </BrowserRouter>
   );

@@ -16,6 +16,8 @@ const index = files.map(file => {
     title: data.title || slug,
     date: data.date || new Date().toISOString().slice(0, 10),
     description: data.description || '',
+    tags: data.tags || [],
+    author: data.author || '',
   }
 }).sort((a, b) => new Date(b.date) - new Date(a.date))
 
