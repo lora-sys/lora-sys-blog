@@ -1,6 +1,7 @@
 {
   "name": "my-blog",
   "version": "0.0.0",
+  "type": "module",
   "scripts": {
     "build-posts": "node scripts/build-posts.js",
     "dev": " npm run build-posts && vite",

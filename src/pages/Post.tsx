@@ -35,7 +35,7 @@ export default function Post() {
         <span>{post.date}</span>
       </div>
       <div className="mb-2 flex flex-wrap gap-1">
-        {(post.tags||[]).map(tag => <span key={tag} className="bg-orange-100 text-orange-700 px-2 py-0.5 rounded text-xs">{tag}</span>)}
+        {(post.tags||[]).map((tag:string)=> <span key={tag} className="bg-orange-100 text-orange-700 px-2 py-0.5 rounded text-xs">{tag}</span>)}
       </div>
       <article className="prose">
         <ReactMarkdown rehypePlugins={[remarkGfm, rehypeRaw]}>{post.content}</ReactMarkdown>
