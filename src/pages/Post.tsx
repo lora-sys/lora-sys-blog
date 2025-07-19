@@ -30,7 +30,13 @@ export default function Post() {
   return (
     <div className="container mt-4 bg-light text-dark min-h-screen p-6 rounded shadow">
       <h1 className="mb-3">{post.title}</h1>
-      <p className="text-muted mb-2">{post.date}</p>
+      <div className="flex gap-4 mb-2 text-sm text-gray-500">
+        <span>作者：{post.author || '佚名'}</span>
+        <span>{post.date}</span>
+      </div>
+      <div className="mb-2 flex flex-wrap gap-1">
+        {(post.tags||[]).map(tag => <span key={tag} className="bg-orange-100 text-orange-700 px-2 py-0.5 rounded text-xs">{tag}</span>)}
+      </div>
       <article className="prose">
         <ReactMarkdown rehypePlugins={[remarkGfm, rehypeRaw]}>{post.content}</ReactMarkdown>
       </article>

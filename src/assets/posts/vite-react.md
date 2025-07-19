@@ -1,12 +1,12 @@
 ---
-title: "Vite + React 快速搭建"
-date: "2025-07-19"
-description: "5 分钟搭好 Vite + React 静态博客。"
+title: Vite + React
+date: 2024-06-02
+description: Vite + React 项目搭建心得。
+tags: ["前端", "Vite", "React"]
+author: 小明
 ---
 
-# Vite + React 快速搭建
-
-这是 Vite + React 的文章内容。
+Vite + React 是现代前端开发的利器。
 
 ## 步骤
 

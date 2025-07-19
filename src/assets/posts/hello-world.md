@@ -1,12 +1,12 @@
 ---
-title: "Hello World"
-date: "2025-07-18"
-description: "我的第一篇博客，记录从零开始的旅程。"
+title: Hello World
+date: 2024-06-01
+description: 这是第一篇博客。
+tags: ["随笔", "起步"]
+author: 小明
 ---
 
-# Hello World
-
-这是我的第一篇博客内容。
+欢迎来到我的博客！
 
 ## 旅程开始
 
