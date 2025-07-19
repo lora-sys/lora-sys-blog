@@ -29,7 +29,7 @@ export function Navbar() {
   const themeLabel = theme === 'light' ? '☀️' : theme === 'dark' ? '🌙' : '🖥️';
 
   return (
-    <nav className="flex gap-4 p-4 bg-slate-50 fixed top-0 left-0 w-full z-[1000] text-center flex-wrap items-center justify-between">
+    <nav className="flex gap-4 p-4 bg-light fixed top-0 left-0 w-full z-[1000] text-center flex-wrap items-center justify-between">
       <div className="flex gap-4 flex-wrap">
         {nav.map(item => (
           <Link key={item.path} to={item.path} className={`hover:underline px-2 py-1 rounded ${location.pathname.startsWith(item.path) && item.path !== '/' ? 'bg-orange-400 text-white' : location.pathname === item.path ? 'bg-orange-400 text-white' : ''}`}>
